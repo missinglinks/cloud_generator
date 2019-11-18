@@ -1,0 +1,8 @@
+[gd_resource type="NativeScript" load_steps=2 format=2]
+
+[ext_resource path="res://cloudgen/bin/cloudgen.gdnlib" type="GDNativeLibrary" id=1]
+
+[resource]
+resource_name = "cloudgen"
+class_name = "CloudGen"
+library = ExtResource( 1 )

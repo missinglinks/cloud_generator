@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://demo_scenes/UI/Debug.gd" type="Script" id=1]
+
+
+
+[node name="DebugUI" type="Control"]
+margin_left = 22.0
+margin_top = 18.0
+margin_right = 156.0
+margin_bottom = 57.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.286275 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 5.0
+margin_bottom = 5.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="FPSLabel" type="Label" parent="ColorRect/VBoxContainer"]
+margin_right = 134.0
+margin_bottom = 14.0
+text = "FPS"
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="VerticesLabel" type="Label" parent="ColorRect/VBoxContainer"]
+margin_top = 18.0
+margin_right = 134.0
+margin_bottom = 32.0
+text = "Vertices"
+__meta__ = {
+"_edit_group_": true
+}

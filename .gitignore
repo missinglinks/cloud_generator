@@ -1,0 +1,8 @@
+.import/
+godot-cpp/
+.mono/
+.vscode/
+export.cfg
+export_presets.cfg
+*.os
+*.so
