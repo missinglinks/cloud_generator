@@ -7,6 +7,7 @@
 
 [node name="CloudGenerator" type="Spatial" parent="."]
 script = ExtResource( 1 )
+threshold = 0.8
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, 0, 90, 0 )

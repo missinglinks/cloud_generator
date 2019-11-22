@@ -5,6 +5,13 @@ using namespace godot;
 
 void CloudGen::_register_methods() {
     register_method("_process", &CloudGen::_process);
+    register_property("area_size", &CloudGen::area_size, (int) 100);
+    register_property("resolution", &CloudGen::resolution, (int) 80);
+    register_property("element_size", &CloudGen::element_size, (real_t) 20.0);
+    register_property("threshold", &CloudGen::threshold, (real_t) 0.6);
+    register_property("speed", &CloudGen::speed, (real_t) 0.3);
+    register_property("variation", &CloudGen::variation, (real_t) 1.0);
+    register_property("update_frame", &CloudGen::update_frame, (int) 3);
 }
 
 CloudGen::CloudGen() {
